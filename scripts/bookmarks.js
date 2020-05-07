@@ -98,6 +98,7 @@ const render = function () {
     renderError();
 
     let items = store.filterList(store.filter);
+    console.log(items)
     let html = generateMainMenu();
 
     if (store.adding === false) {
@@ -187,6 +188,7 @@ const handleDeleteBookmark = function () {
 const handleFilterBookmark = function () {
     $('main').on('change', '#filterBy', event => {
         let value = event.currentTarget.value;
+        console.log('current', value)
         store.filterList(value);
         render();
     });
