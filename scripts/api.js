@@ -1,11 +1,12 @@
 const BASE_URL = 'https://thinkful-list-api.herokuapp.com/dwayne';
 
 
+
 const bookmarkApiFetch = function (...args) {
 
     let error;
     return fetch(...args)
-        .then(res => {
+        .then(res => { //res would be an array of objects ==> bookmarks [{}]
             if (!res.ok) {
                 error = { code: res.status };
             }
