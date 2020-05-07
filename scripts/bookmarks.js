@@ -98,7 +98,6 @@ const render = function () {
     renderError();
 
     let items = store.filterList(store.filter);
-    console.log(store.filter)
     let html = generateMainMenu();
 
     if (store.adding === false) {
