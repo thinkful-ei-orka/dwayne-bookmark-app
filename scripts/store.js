@@ -25,6 +25,7 @@ const deleteBookmark = function (id) {
 };
 
 const filterList = function (rating) {
+    console.log('state1', rating, state.filter)
     state.filter = rating;
     let filterItems = state.bookmarks.filter(item =>
         item.rating >= rating);
