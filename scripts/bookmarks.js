@@ -189,6 +189,7 @@ const handleFilterBookmark = function () {
     $('main').on('change', '#filterBy', event => {
         let value = event.currentTarget.value;
         console.log('current', value)
+        store.filter = value
         store.filterList(value);
         render();
     });
