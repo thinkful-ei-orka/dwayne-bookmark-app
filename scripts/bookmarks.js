@@ -8,7 +8,7 @@ const generateMainMenu = function () {
         <button id="addBookmark" class="button">New +</button>
         <select id="filterBy"> 
             <option>Filter by Rating</option>
-            <option value = "5">5</option> 
+            <option value = "5"> 5</option> 
             <option value = "4"> 4</option>
             <option value = "3"> 3</option>
             <option value = "2"> 2</option>
