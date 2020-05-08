@@ -99,6 +99,10 @@ input {
     color: #fff
 }
 
+.a {
+    color: #fff;
+}
+
 .buttons button {
     width: 150px;
 }

@@ -22,8 +22,9 @@ const generateBookmarkElement = function (bookmark) {
     if (bookmark.expanded) {
         return `
           <li class="bookmark-item bookmark-item-expanded" data-id="${bookmark.id}">
-          <h2>${bookmark.title}</h2> <div class="rating">Rating: ${bookmark.rating}</div>
-          <a href="${bookmark.url}" target="blank" class="button-link">Visit ${bookmark.title}!</a><span class="rating-${bookmark.rating}">   </span>
+          <h2>${bookmark.title}</h2> 
+          <div class="rating">Rating: ${bookmark.rating}</div>
+          <a href="${bookmark.url}" target="blank" class="button-link">Visit ${bookmark.title}</a><span class="rating-${bookmark.rating}">   </span>
           <div class="description">                    
           <p>${bookmark.desc}</p>
           </div>
