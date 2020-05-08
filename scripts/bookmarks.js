@@ -52,19 +52,19 @@ const generateBookmarkString = function (bookmarkItem) {
 const generateAddBookmark = function () {
     return `
     <form class="addingItem js-addingItem">
+    <h4>Add New Bookmark</h4>
     <fieldset>
-    <legend>Add New Bookmark</legend>
-    <label for="addNewBookmark">Title</label>
-    <input type="text" id="addNewBookmark" name="title" required>
-    <label for="desc">Description</label>
-    <input type="text" id="desc" name="desc" required>
-    <label for="link">Link:</label>
-    <input type="url" id="link" name="url" required>
-    <label for="rating">Rating:</label>
-    <input type="number" min=1 max=5 id="rating" name="rating" required>
+        <label for="addNewBookmark">Title</label>
+        <input class="input-form" type="text" id="addNewBookmark" name="title" required>
+        <label for="desc">Description</label>
+        <input class="input-form" type="text" id="desc" name="desc" required>
+        <label for="link">Link:</label>
+        <input class="input-form"type="url" id="link" name="url" required>
+        <label for="rating">Rating:</label>
+        <input class="input-form" type="number" min=1 max=5 id="rating" name="rating" required>
     <div class="buttons">
-    <button type="submit" class="button submit">Submit</button>
-    <button type="button" id="js-cancel" class="button">Cancel</button>
+        <button type="submit" class="button submit">Submit</button>
+        <button type="button" id="js-cancel" class="button">Cancel</button>
     </div>
     </fieldset>
     </form>

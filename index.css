@@ -91,6 +91,11 @@ input {
     margin: 0 auto;
 }
 
+.input-form {
+  padding: 7px;
+  border-radius: 7px;
+  
+}
 .buttons {
     padding: 20px;
 }
