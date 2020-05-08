@@ -124,7 +124,7 @@ legend {
 .bookmark-item-expanded {
     display: flex;
     flex-direction: column;
-}
+} 
 
 .buttonD {
     width: 200px;
