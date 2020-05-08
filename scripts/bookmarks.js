@@ -7,11 +7,11 @@ const generateMainMenu = function () {
     <button id="addBookmark" class="button">New +</button>
        <select id="filterBy"> 
         <option>Filter by</option>
-        <option value = "5">5 of 5</option> 
-        <option value = "4">4 of 5</option>
-        <option value = "3">3 of 5</option>
-        <option value = "2">2 of 5</option>
-        <option value = "1">1 of 5</option>
+        <option value = "5">5</option> 
+        <option value = "4"> 5</option>
+        <option value = "3"> 5</option>
+        <option value = "2"> 5</option>
+        <option value = "1"> 5</option>
        </select>
     `;
 };
@@ -98,7 +98,7 @@ const render = function () {
     renderError();
 
     let items = store.filterList(store.filter);
-    console.log(items, store.filter)
+
     let html = generateMainMenu();
 
     if (store.adding === false) {
@@ -188,7 +188,6 @@ const handleDeleteBookmark = function () {
 const handleFilterBookmark = function () {
     $('main').on('change', '#filterBy', event => {
         let value = event.currentTarget.value;
-        console.log('current', value)
         store.filter = value
         store.filterList(value);
         render();

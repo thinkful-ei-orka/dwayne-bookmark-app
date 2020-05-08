@@ -5,11 +5,7 @@ const state = {
     filter: 0
 }
 
-/* 
-const bookmarks = [];
-let adding = false;
-let error = null;
-let filter = 0; */
+
 
 const findById = function (id) {
     return state.bookmarks.find(currentItem => currentItem.id === id);
@@ -21,11 +17,11 @@ const addBookmark = function (item) {
 };
 
 const deleteBookmark = function (id) {
-    state.bookmarks = this.bookmarks.filter(currentItem => currentItem.id !== id);
+    state.bookmarks = state.bookmarks.filter(currentItem => currentItem.id !== id);
 };
 
 const filterList = function (rating) {
-    console.log('state1', rating, state.filter)
+
     state.filter = rating;
     let filterItems = state.bookmarks.filter(item =>
         item.rating >= rating);
