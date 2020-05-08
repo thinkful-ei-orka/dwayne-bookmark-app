@@ -40,7 +40,8 @@ h2 {
 
 
 li:hover {
-    background-color: orange;
+    background-color: #003bde;
+    color:#fff;
 }
 
 li {
