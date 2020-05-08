@@ -2,10 +2,10 @@ const BASE_URL = 'https://thinkful-list-api.herokuapp.com/dwayne';
 
 
 
-const fetchBookmarks = async function (url) {
+const fetchBookmarks = async function (...args) {
 
     let error;
-    const res = await fetch(url);
+    const res = await fetch(...args);
     if (!res.ok) {
         error = { code: res.status };
     }
