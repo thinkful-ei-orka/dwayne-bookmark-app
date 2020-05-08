@@ -4,15 +4,17 @@ import api from './api.js';
 
 const generateMainMenu = function () {
     return `
-    <button id="addBookmark" class="button">New +</button>
-       <select id="filterBy"> 
-        <option>Filter by</option>
-        <option value = "5">5</option> 
-        <option value = "4"> 5</option>
-        <option value = "3"> 5</option>
-        <option value = "2"> 5</option>
-        <option value = "1"> 5</option>
-       </select>
+    <div class="nav">
+        <button id="addBookmark" class="button">New +</button>
+        <select id="filterBy"> 
+            <option>Filter by Rating</option>
+            <option value = "5">5</option> 
+            <option value = "4"> 5</option>
+            <option value = "3"> 5</option>
+            <option value = "2"> 5</option>
+            <option value = "1"> 5</option>
+        </select>
+    </div>
     `;
 };
 

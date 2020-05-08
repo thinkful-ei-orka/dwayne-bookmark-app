@@ -15,20 +15,19 @@ h1 {
     font-size: 55px;
 }
 
+.nav {
+    display: 'flex';
+    justify-content: "center";
+}
 .button, select {
-    display: inline-block;
-    background-color: #d83868;
-    border-radius: 10px;
-    border: 4px double #cccccc;
-    color: #eeeeee;
-    text-align: center;
-    font-size: 28px;
+
+    background-color: #003bde;
+    border-radius: 5px;
+    border: 1px double #003bde;
+    color: #fff;
+    font-size: 17px;
     padding: 20px;
     width: 200px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
     margin: 5px;
   }
 
