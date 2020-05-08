@@ -95,6 +95,10 @@ input {
     padding: 20px;
 }
 
+.button-link {
+    color: #fff
+}
+
 .buttons button {
     width: 150px;
 }

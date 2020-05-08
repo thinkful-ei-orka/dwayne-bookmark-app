@@ -34,8 +34,8 @@ const generateBookmarkElement = function (bookmark) {
     else {
         return `
         <li class="bookmark-item" data-id="${bookmark.id}">
-        <h2>${bookmark.title}</h2> 
-        <div class="rating">Rating: ${bookmark.rating}</div>
+            <h2>${bookmark.title}</h2> 
+            <div class="rating">Rating: ${bookmark.rating}</div>
         </li>
         `;
     }
