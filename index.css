@@ -94,7 +94,7 @@ input {
 .input-form {
   padding: 7px;
   border-radius: 7px;
-  
+  border: 1px solid #c3c3c3;
 }
 .buttons {
     padding: 20px;
