@@ -3,7 +3,7 @@ import store from './store.js';
 import api from './api.js';
 
 const main = function () {
-    api.getItems()
+    api.getBookmarks()
         .then(items => {
             items.forEach(item => store.addBookmark(item));
             bookmarks.render();

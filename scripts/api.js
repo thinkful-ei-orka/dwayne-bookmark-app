@@ -2,10 +2,10 @@ const BASE_URL = 'https://thinkful-list-api.herokuapp.com/dwayne';
 
 
 
-const fetchBookmarks = async function (...args) {
+const fetchBookmarks = async function (url) {
 
     let error;
-    const res = await fetch(...args);
+    const res = await fetch(url);
     if (!res.ok) {
         error = { code: res.status };
     }
@@ -17,18 +17,18 @@ const fetchBookmarks = async function (...args) {
     return data;
 };
 
-const getItems = function () {
+const getBookmarks = function () {
     return fetchBookmarks(`${BASE_URL}/bookmarks`);
 };
 
 const createBookmark = function (title, url, desc, rating) {
-    const newItem = JSON.stringify({ title, url, desc, rating });
+    const newBookmark = JSON.stringify({ title, url, desc, rating });
     return fetchBookmarks(`${BASE_URL}/bookmarks`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: newItem
+        body: newBookmark
     });
 };
 
@@ -40,7 +40,7 @@ const deleteBookmark = function (id) {
 
 
 export default {
-    getItems,
+    getBookmarks,
     createBookmark,
     deleteBookmark
 };
